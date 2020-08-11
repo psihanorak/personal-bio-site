@@ -1,0 +1,49 @@
+{
+  "name": "personal-bio-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/javascripts/main.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production --module-bind js=babel-loader",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psihanorak/personal-bio-site.git"
+  },
+  "keywords": [],
+  "author": "Phonesalo Sihanorak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psihanorak/personal-bio-site/issues"
+  },
+  "homepage": "https://github.com/psihanorak/personal-bio-site#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.2",
+    "firebase": "^7.17.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
